@@ -1,0 +1,163 @@
+.intro{
+    background-image: url(../img/img-sobre/backSobre.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: #F0F0EA;
+}
+
+.intro h1{
+    font-size: 5.6rem;
+}
+
+.intro h1 span{
+    color: #f9b838;
+}
+
+.intro h2{
+    font-size: 4.8rem;
+    font-weight: 300;
+}
+
+.sections{
+    min-height: 90vh;
+    padding: 4rem 0;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sections.green{
+    background: #46594e;
+    color: #F0F0EA;
+}
+
+.content-text p{
+    margin: 1rem 0;
+}
+
+.sections h2{
+    font-size: 5.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+h2 span{
+    color: #f9b838;
+}
+
+.flex-content{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.content-text{
+    width: 80%;
+    height: 100%;
+    font-size: 2.4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    margin: 0 4rem;
+}
+
+.semi-section{
+    padding: 4rem;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.semi-section h2{
+    font-size: 4.8rem;
+}
+
+.flex-center{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-center h2{
+    width: 100%;
+    text-align: center;
+}
+
+.valores{
+    margin-top: 2rem;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.valor{
+    margin: 1rem 0;
+    width: 30rem;
+    height: 15rem;
+    background: #d9d9d9;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: baseline;
+    align-items: center;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.valor h3{
+    font-weight: 600;
+    font-size: 2.4REM;
+}
+
+.valor hr{
+    margin: 0.5rem 0;
+    width: 80%;
+}
+
+.valor p{
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.Parceiros{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.Parceiros img{
+    width: 20%;
+    min-width: 12rem;
+    margin: 1rem 0;
+    border-radius: 2rem;
+    border: 0.1rem solid black;
+}
+
+@media (max-width: 80rem){
+    .intro{
+        text-align: center;
+    }
+    
+    .intro h1{
+        font-size: 4rem;
+    }
+
+    .intro h2{
+        font-size: 3.2rem;
+    }
+    
+}

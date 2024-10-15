@@ -1,0 +1,220 @@
+.intro {
+    background-image: url(../img/img-tenebrium/backTenebrium.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: #F0F0EA;
+}
+
+.intro h1 {
+    font-size: 5.6rem;
+    margin: -10px;
+    font-weight: bold;
+}
+
+.intro h1 span {
+    color: #f9b838;
+}
+
+.intro h2 {
+    font-size: 4.8rem;
+    font-weight: 300;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 70vh;
+    padding: 10px;
+    text-align: center;
+}
+
+.sections.green {
+    background: #46594E;
+    color: #F2F2F2;
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+
+.sections h2 {
+    font-size: 5.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.sections h2 span {
+    color: #f9b838;
+}
+
+.content-text {
+    min-width: 30rem;
+    max-width: 90rem;
+    margin-left: 10px;
+    font-size: 2.4rem;
+    text-align: left;
+}
+
+.life-cycle {
+    background-color: #46594E;
+    padding-top: 30px;
+}
+
+.cycle-stages {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.stage {
+    margin: 50px;
+    text-align: center;
+}
+
+.circle {
+    width: 250px;
+    height: 250px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.circle img {
+    width: 80%;
+    height: auto;
+}
+
+.stage p {
+    font-size: 2.4rem;
+    color: #F2F2F2;
+}
+
+.advantages {
+    background-color: #F2F2F2;
+}
+
+.advantage-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.advantage {
+    background-color: #fff;
+    border-radius: 8%;
+    padding: 10px;
+    width: 300px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.advantage img {
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+}   
+
+.advantage p {
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.products {
+    min-height: 50vh;
+    background-color: #F2F2F2;
+    padding: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.sponsor{
+    margin-left: 6rem;
+}
+
+.sponsor h2{
+    font-size: 4.8rem;
+}
+
+.sponsor p{
+    font-size: 2.4rem;
+}
+
+.learn-more {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25rem;
+    height: 6rem;
+    background-color: #f9b838;
+    color: #262535;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.6rem;
+    font-weight: bolder;
+    transition: all ease-in-out 300ms;
+}
+
+.learn-more:hover{
+    transform: scale(1.1);
+}
+
+@media (max-width: 80rem){
+    .intro{
+        text-align: center;
+    }
+    
+    .intro h1{
+        font-size: 4rem;
+    }
+
+    .intro h2{
+        font-size: 3.2rem;
+        padding-top: 20px;
+    }
+
+    .sections h2 {
+        font-size: 5.6rem;
+    }
+
+    .content-text {
+        margin-left: 1rem;
+        font-size: 2.4rem;
+    }
+
+    .circle {
+        width: 150px;
+        height: 150px;
+    }
+
+    .stage p,
+    .advantage p {
+        font-size: 1.6rem;
+    }
+
+    .advantage img {
+        width: 60px;
+    }
+
+    .sponsor{
+        margin-left: 2rem;
+    }
+}
+    

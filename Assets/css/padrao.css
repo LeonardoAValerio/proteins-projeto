@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    color: #262535;
+}
+
+/*HEADER*/
+.img_logo_header{
+    width: 17.5rem;
+    transition: all ease-in-out 300ms;
+}
+
+.img_logo_header:hover{
+    transform: scale(1.1);
+}
+
+.header,
+.navigation_header{
+    position: sticky;
+    top:0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.header{
+    background-color: #4C4C4C;
+    justify-content: space-between;
+    padding: 0 2rem;
+    height: 6rem;
+    z-index: 2;
+}
+
+.navigation_header{
+    gap: 5em;
+    z-index: 2;
+}
+
+.navigation_header a{
+    text-decoration: none;
+    color: #F0F0EA;
+    transition: 1s;
+    transition: all ease-in-out 300ms;
+    font-size: 2.4rem;
+    padding: 0 2rem;
+}
+
+.navigation_header a:hover{
+    transform: scale(1.1);
+}
+
+.active{
+    background: #46594e;
+    padding: 0.5rem;
+    border-radius: 1rem;
+}
+
+.btn_icon_header{
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+/*FOOTER*/
+footer{
+    padding: 4rem;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: start;
+    background: #46594e;
+    color: #F0F0EA;
+}
+
+.section-footer{
+    width: 25%;
+    font-size: 2.4rem;
+}
+
+.section-footer h3{
+    font-weight: 600;
+}
+
+.section-footer p{
+    font-weight: 200;
+}
+
+.section-footer iframe{
+    width: 100%;
+    max-height: 20rem
+}
+
+.end-footer{
+    width: 100%;
+}
+
+.end-footer p{
+    padding: 2rem;
+    font-size: 1.6rem;
+}
+
+.end-footer hr{
+    width: 50%;
+}
+
+@media (max-width: 80rem){
+    /*CABEÇALHO*/
+    .navigation_header{
+        position: absolute;
+        flex-direction: column;
+        justify-content: baseline;
+        top: 0;
+        background: #4C4C4C;
+        height: 100vh;
+        width: 40vw;
+        animation-duration: 300ms;
+        margin-left: -100vw;
+    }
+
+    .navigation_header a{
+        padding: 0;
+        font-size: 1.6rem;
+    }
+    .btn_icon_header{
+        display: block;
+    }
+
+    .section-footer{
+        font-size: 1.6rem;
+        width: 100%;
+        margin: 1rem 0;
+    }
+
+}
+
+@keyframes showSidebar {
+    from {margin-left: -100vw;}
+    to {margin-left: -5vw;}
+}

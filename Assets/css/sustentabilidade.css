@@ -1,0 +1,119 @@
+.intro{
+    background-image: url(../img/img-sustentabilidade/backSustentabilidade.png);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    color: #F0F0EA;
+}
+
+.intro h1{
+    font-size: 5.6rem;
+}
+
+.intro h1 span{
+    color: #f9b838;
+}
+
+.intro h2{
+    font-size: 4.8rem;
+    font-weight: 300;
+}
+
+.sections{
+    min-height: 90vh;
+    padding: 4rem 0;
+    background: #f2f2f2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sections.green{
+    background: #46594e;
+    color: #F0F0EA;
+}
+
+.content-text p{
+    margin: 1rem 0;
+}
+
+.sections h2{
+    font-size: 5.6rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+h2 span{
+    color: #f9b838;
+}
+
+.flex-content{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.content-text{
+    width: 80%;
+    height: 100%;
+    font-size: 2.4rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+}
+
+.margined{
+    margin: 0 4rem;
+}
+
+.main-content img{
+    min-width: 30rem;
+    width: 35%;
+    border-radius: 4rem;
+    max-width: 30rem;
+}
+
+.production{
+    padding: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.text-production{
+    width: 50%;
+}
+
+@media (max-width: 80rem){
+    .intro{
+        text-align: center;
+    }
+    
+    .intro h1{
+        font-size: 4rem;
+    }
+
+    .intro h2{
+        font-size: 3.2rem;
+    }
+
+    .production{
+        flex-flow: row wrap;
+    }
+
+    .content-text{
+        font-size: 2.4rem;
+    }
+
+    .text-production{
+        width: 60%;
+        min-width: 30rem;
+    }
+}
