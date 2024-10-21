@@ -3,8 +3,9 @@ const wrapperProdutos = document.querySelector("main.produtos");
 
 async function fetchProdutos() {
     const result = await fetch(URLprodutos);
+    
     const data = await result.json();
-    return data;
+    return data.data;
 }
 
 function montarProduto(dataProduto) {
