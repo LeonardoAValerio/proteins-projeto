@@ -1,16 +1,9 @@
-const URL = "";
+const URLprodutos = "https://fhnljcqz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22produto%22%5D%7B%0A++Titulo%2C%0A++++Descricao%2C%0A++++++Imagem%2C%7D%0A";
 const wrapperProdutos = document.querySelector("main.produtos");
 
-const data = [
-    {
-        title: "Larvas Vivas",
-        description: "As larvas de Tenébrio são servidas como alimento vivo e podem ser oferecidas como parte de uma dieta variada para pogonas, geckos, hedgehogs, tarântulas, peixes, escorpiões, pássaros, rãs e o utros animais de estimação exóticos. É uma ótima opção para pessoas que querem uma alternativa prática e nutritiva para alimentar seu Pet.",
-        image: "https://api.unsplash.com/photos"
-    }
-]
-
 async function fetchProdutos() {
-    const result = await fetch(URL);
+    const result = await fetch(URLprodutos);
+    const data = await result.json();
     return data;
 }
 
@@ -49,6 +42,7 @@ function montarProduto(dataProduto) {
 
 async function main() {
     const produtos = await fetchProdutos();
+    console.log(produtos);
     produtos.forEach(produto => {
         const elemento = montarProduto(produto);
         wrapperProdutos.append(elemento);
