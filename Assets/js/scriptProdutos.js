@@ -2,9 +2,9 @@ const URLprodutos = "https://fhnljcqz.api.sanity.io/v2022-03-07/data/query/produ
 const wrapperProdutos = document.querySelector("main.produtos");
 
 async function fetchProdutos() {
-    const result = await fetch(URLprodutos);
-    
+    const result = await fetch(URLprodutos, {method: "GET"});
     const data = await result.json();
+    console.log("DATA: ", data);
     return data.data;
 }
 
