@@ -18,17 +18,18 @@ function montarProduto(dataProduto) {
     buttonContato.appendChild(textButton);
 
     const title = document.createElement("h2");
-    title.innerText = dataProduto.title;
+    title.innerText = dataProduto.Titulo;
 
     const description = document.createElement("p");
-    description.innerText = dataProduto.description;
+    description.innerText = dataProduto.Descricao;
 
     const contentText = document.createElement("div");
     contentText.classList.add("content-text");
     contentText.append(title, description, buttonContato);
 
     const img = document.createElement("img");
-    img.setAttribute("src", dataProduto.img);
+    console.log(dataProduto);
+    img.setAttribute("src", dataProduto.imgProduto);
 
     const mainContent = document.createElement("div");
     mainContent.classList.add(["main-content",  "flex-content"]);
