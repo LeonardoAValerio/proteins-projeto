@@ -1,11 +1,11 @@
-const URLprodutos = "https://fhnljcqz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22produto%22%5D%7B%0A++Titulo%2C%0A++++Descricao%2C%0A++++++Imagem%2C%7D%0A";
+const URLprodutos = "https://fhnljcqz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%27produto%27%5D+%7B%0A++Titulo%2C%0A++++Descricao%2C%0A++%27imgProduto%27%3A+Imagem.asset-%3Eurl%0A%7D";
 const wrapperProdutos = document.querySelector("main.produtos");
 
 async function fetchProdutos() {
     const result = await fetch(URLprodutos, {method: "GET"});
     const data = await result.json();
     console.log("DATA: ", data);
-    return data.data;
+    return data.result;
 }
 
 function montarProduto(dataProduto) {
