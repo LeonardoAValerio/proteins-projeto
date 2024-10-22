@@ -32,7 +32,8 @@ function montarProduto(dataProduto) {
     img.setAttribute("src", dataProduto.imgProduto);
 
     const mainContent = document.createElement("div");
-    mainContent.classList.add(["main-content",  "flex-content"]);
+    mainContent.classList.add("main-content");
+    mainContent.classList.add("flex-content");
     mainContent.append(img, contentText);
 
     const section = document.createElement("sections");
