@@ -5,42 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Assets/css/padrao.css">
     <link rel="stylesheet" href="Assets/css/sobre.css">
-    <link rel="stylesheet" href="Assets/css/footer.css">
     <link rel="shortcut icon" type="image/png" href="Assets/img/favicon-grilo.png"/>
     <title>Proteins</title>
-</head>
-<body>
+    <script src="Assets/js/historia.js"></script>
+    <script src="Assets/js/parceiros.js"></script>
+  </head>
+  <body>
     <header class="header" id="header">
-        <div class="logo_header">
-           <a href="index.html"><img src="Assets/img/logoProteins.png" alt="Logo GN" class="img_logo_header"></a>
-        </div>
-        <div class="navigation_header" id="navigation_header">
-            <button onclick="toggleSidebar()" class="btn_icon_header">
-                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
-                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
-                </svg>
-            </button>
-            <a href="sobre.html">Sobre</a>
-            <a href="tenebrium.html">Tenebrium</a>
-            <a href="sustentabilidade.html">Sustentabilidade</a>
-            <a href="produtos.html">Produtos</a>
-            <a href="contato.html">Contato</a>
-        </div>
+      <div class="logo_header">
+        <a href="index.html"
+          ><img
+            src="Assets/img/logoProteins.png"
+            alt="Logo GN"
+            class="img_logo_header"
+        /></a>
+      </div>
+      <div class="navigation_header" id="navigation_header">
         <button onclick="toggleSidebar()" class="btn_icon_header">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-x"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
+            />
+          </svg>
         </button>
+        <a href="sobre.html">Sobre</a>
+        <a href="tenebrium.html">Tenebrium</a>
+        <a href="sustentabilidade.html">Sustentabilidade</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="contato.html">Contato</a>
+      </div>
+      <button onclick="toggleSidebar()" class="btn_icon_header">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="20"
+          fill="currentColor"
+          class="bi bi-list"
+          viewBox="0 0 16 16"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"
+          />
+        </svg>
+      </button>
     </header>
 
     <section class="intro">
-        <h1><span>Pro</span>teins</h1>
-        <h2>Um pouco sobre quem somos nós</h2>
+      <h1><span>Pro</span>teins</h1>
+      <h2>Um pouco sobre quem somos nós</h2>
     </section>
 
     <section class="sections green">
-        <div class="main-content flex-content"  id="historia">
-            <!-- <div class="content-text">
+      <div class="main-content flex-content" id="historia">
+        <!-- <div class="content-text">
                 <h2><span>Nossa</span> História</h2>
                 <p>
                     Nossa empresa é impulsionada por uma mentalidade ousada de exploração, buscando novas oportunidades para inovar e proteger nosso ambiente. Nossa empresa é impulsionada por uma mentalidade ousada de exploração, buscando novas oportunidades para inovar e proteger nosso ambiente.
@@ -49,70 +74,82 @@
                     Nossa empresa é impulsionada por uma mentalidade ousada de exploração, buscando novas oportunidades para inovar e proteger nosso ambiente.
                 </p>
             </div> -->
-        </div>
+      </div>
     </section>
 
     <section class="semi-section">
-        <div class="main-content flex-center">
-            <h2>Missão e <span>Valores</span></h2>
-            <div class="valores">
-                <div class="valor">
-                    <h3>Adaptabilidade</h3>
-                    <hr>
-                    <p>Com uma equipe comprometida com a inovação contínua, encontramos soluções ágeis para cada desafio. </p>
-                </div>
-                <div class="valor">
-                    <h3>Soliedariedade</h3>
-                    <hr>
-                    <p>Estamos comprometidos em apoiar nossa comunidade através de iniciativas que promovem o bem-estar social e ambiental.</p>
-                </div>
-                <div class="valor">
-                    <h3>Autenticidade</h3>
-                    <hr>
-                    <p>Desde nossa fundação, valorizamos a transparência e a integridade em todas as nossas relações. </p>
-                </div>
-            </div>
+      <div class="main-content flex-center">
+        <h2>Missão e <span>Valores</span></h2>
+        <div class="valores">
+          <div class="valor">
+            <h3>Adaptabilidade</h3>
+            <hr />
+            <p>
+              Com uma equipe comprometida com a inovação contínua, encontramos
+              soluções ágeis para cada desafio.
+            </p>
+          </div>
+          <div class="valor">
+            <h3>Soliedariedade</h3>
+            <hr />
+            <p>
+              Estamos comprometidos em apoiar nossa comunidade através de
+              iniciativas que promovem o bem-estar social e ambiental.
+            </p>
+          </div>
+          <div class="valor">
+            <h3>Autenticidade</h3>
+            <hr />
+            <p>
+              Desde nossa fundação, valorizamos a transparência e a integridade
+              em todas as nossas relações.
+            </p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section class="semi-section">
-        <div class="main-content flex-center" id="parceiros">
-            <!-- <h2>Parceiros</h2>
+      <div class="main-content flex-center" id="parceiros">
+        <!-- <h2>Parceiros</h2>
             <div class="Parceiros">
                 <img src="Assets/img/img-sobre/logoAshLand.png" alt="">
                 <img src="Assets/img/img-sobre/logoBiopark.png" alt="">
                 <img src="Assets/img/img-sobre/logoOuroFino.png" alt="">
                 <img src="Assets/img/img-sobre/logoUnioste.png" alt="">
             </div> -->
-        </div>
+      </div>
     </section>
 
     <footer>
-        <div class="section-footer" id="localizacao">
+        <div class="section-footer">
             <h3>Localização</h3>
-            <p class="footer"></p>
+            <p>Cidade: Toledo - PR</p>
+            <p>Bairro: Biopark</p>
+            <p>Rua: Avenida Max Planck, 3796</p>
+            <p>Cep: 85919-899</p>
         </div>
-        
-        <div class="section-footer" id="contatos">
+
+        <div class="section-footer">
             <h3>Contatos</h3>
-            <p class="footer"></p>
+            <p>Email: inventado@gmail.com</p>
+            <p>Telefone: (45)99916-3550</p>
         </div>
-        
-        <div class="section-footer" id="redessociais">
+
+        <div class="section-footer">
             <h3>Redes sociais</h3>
-            <div> <p class="footer"> Instagram: <a class="footer-link" href="" class="footer" id="redes-sociais">@proteins_oficial</a></p></div>
+            <p>Instagram: @proteins_oficial</p>
         </div>
-        
-        <div class="section-footer" id="maps">
-            <iframe class="footer" id="google-maps" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="section-footer">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3627.174389876693!2d-53.71297392478447!3d-24.61767367808865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f3bd3658fec82d%3A0x9298e43c320c4a86!2zQmlvcGFyayBFZHVjYcOnw6Nv!5e0!3m2!1spt-BR!2sbr!4v1716941100896!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-        
+
         <div class="end-footer">
             <hr>
-            <p class="footer" id="direitos">Direitos reservados Proteins LTDA. 2024</p>
+            <p>Direitos reservados Proteins LTDA. 2024</p>
         </div>
     </footer>
-    <script src="Assets/js/foot.js"></script>  
-    <script src="Assets/js/nav.js"></script>   
+    <script src="Assets/js/foot.js"></script> 
 </body>
 </html>
