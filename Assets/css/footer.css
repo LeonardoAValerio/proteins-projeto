@@ -1,0 +1,14 @@
+.footer{
+    font-size: 2.0rem;
+}
+
+.footer-link{
+    font-size: 2.0rem;
+    color: whitesmoke;
+}
+
+.section-footer{
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
