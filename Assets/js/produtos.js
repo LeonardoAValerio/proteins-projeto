@@ -52,5 +52,5 @@ async function main() {
 
 window.addEventListener("load", async () => {
     await main();
-    window.location.href = window.location.hash;
+    if(window.location.hash) window.location.href = window.location.hash;
 });

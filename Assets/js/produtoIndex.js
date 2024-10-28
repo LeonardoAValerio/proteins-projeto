@@ -14,7 +14,6 @@ function constructDescription(description = "") {
     for(let i = 0; i < descriptionSplited.length; i++) {
         if(i === (LIMIT_WORDS-1)) break;
         const word = descriptionSplited[i];
-        console.log(word);
         descriptionCreated.push(word);
     }
     descriptionCreated.push("...");
@@ -45,15 +44,12 @@ function constructCardProduct(dataProduct) {
 
 async function main() {
     const products = await fetchProducts();
-    console.log(products);
     products.forEach(product => {
         const element = constructCardProduct(product);
-        console.log(element);
         wrapperProducts.append(element);
     });
 }
 
 window.addEventListener("load", async () => {
-    console.log("produto Index");
     await main();
 });
