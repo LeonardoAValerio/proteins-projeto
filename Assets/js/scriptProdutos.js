@@ -1,10 +1,9 @@
-const URLprodutos = "https://fhnljcqz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%27produto%27%5D+%7B%0A++Titulo%2C%0A++++Descricao%2C%0A++%27imgProduto%27%3A+Imagem.asset-%3Eurl%0A%7D";
+const URLprodutos = "https://fhnljcqz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%27produto%27%5D+%7B%0A++produto%2C%0A++++Descricao%2C%0A++%27imgProduto%27%3A+Imagem.asset-%3Eurl%0A%7D";
 const wrapperProdutos = document.querySelector("main.produtos");
 
 async function fetchProdutos() {
     const result = await fetch(URLprodutos, {method: "GET"});
     const data = await result.json();
-    console.log("DATA: ", data);
     return data.result;
 }
 
@@ -18,7 +17,7 @@ function montarProduto(dataProduto) {
     buttonContato.appendChild(textButton);
 
     const title = document.createElement("h2");
-    title.innerText = dataProduto.Titulo;
+    title.innerText = dataProduto.produto;
 
     const description = document.createElement("p");
     description.innerText = dataProduto.Descricao;
@@ -28,7 +27,6 @@ function montarProduto(dataProduto) {
     contentText.append(title, description, buttonContato);
 
     const img = document.createElement("img");
-    console.log(dataProduto);
     img.setAttribute("src", dataProduto.imgProduto);
 
     const mainContent = document.createElement("div");
@@ -38,6 +36,7 @@ function montarProduto(dataProduto) {
 
     const section = document.createElement("sections");
     section.classList.add("sections");
+    section.id = dataProduto.produto;
     section.append(mainContent);
 
     return section;
@@ -45,7 +44,6 @@ function montarProduto(dataProduto) {
 
 async function main() {
     const produtos = await fetchProdutos();
-    console.log(produtos);
     produtos.forEach(produto => {
         const elemento = montarProduto(produto);
         wrapperProdutos.append(elemento);
