@@ -1,11 +1,11 @@
-const URL =
+const URLparceiros =
   "https://fhnljcqz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22parceiro%22%5D%7B%0A++NmFoto%2C%0A++%22url%22%3A+Foto.asset-%3Eurl%0A%7D";
 
 window.addEventListener("load", async function () {
   try {
     const wrapper = this.document.querySelector("#parceiros");
 
-    const resp = await fetch(URL, {
+    const resp = await fetch(URLparceiros, {
       method: "GET",
     });
 
