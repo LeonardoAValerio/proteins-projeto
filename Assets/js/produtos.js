@@ -50,4 +50,7 @@ async function main() {
     });
 }
 
-window.onload = main;
+window.addEventListener("load", async () => {
+    console.log("produtos");
+    await main();
+});
