@@ -1,9 +1,9 @@
-const URL =
+const URLfooter =
   "https://fhnljcqz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22InformacoesDaEmpresa%22%5D%7B%0A++++redesSocial%2C%0A++++Direitos%2C%0A++++Contatos%2C%0A++++Localizacao%2C%0A++++linksMaps%0A%7D";
 
 window.addEventListener("load", async function () {
   try {
-    const resp = await fetch(URL, { method: "GET" });
+    const resp = await fetch(URLfooter, { method: "GET" });
     const dados = await resp.json();
 
     console.log(dados);

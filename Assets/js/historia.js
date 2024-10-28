@@ -1,10 +1,10 @@
-const URL = "https://fhnljcqz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22paragrafo%22%5D&perspective=previewDrafts";
+const URLhistoria = "https://fhnljcqz.api.sanity.io/v2022-03-07/data/query/production?query=*%5B_type+%3D%3D+%22paragrafo%22%5D&perspective=previewDrafts";
 
 window.addEventListener("load", async function () {
   try {
     const wrapper = this.document.querySelector("#historia");
 
-    const resp = await fetch(URL, {
+    const resp = await fetch(URLhistoria, {
       method: "GET",
     });
 
