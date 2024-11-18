@@ -23,7 +23,7 @@ window.addEventListener("load", async function () {
 
     for (let i = 0; i < dados.result.length; i++) {
       const p = document.createElement("p");
-      p.innerText = dados.result[i].paragrafo;
+      p.innerText = dados.result[(dados.result.length - 1) - i].paragrafo;
       div.append(p);
     }
 
